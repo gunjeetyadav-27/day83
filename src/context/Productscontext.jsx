@@ -2,7 +2,7 @@ import React, { createContext, useContext, useState, useEffect} from 'react'
 export const Productsdatacontext=createContext()
 import axios from 'axios'
 import { getData } from '../api/productsapi'
-const Productsdata = (props) => {
+const Productscontext = (props) => {
    const [products, setproducts] = useState([])
 
  async function setdata(){
@@ -25,4 +25,4 @@ useEffect(()=>{
   )
 }
 
-export default Productsdata
+export default Productscontext
